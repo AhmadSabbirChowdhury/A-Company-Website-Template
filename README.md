@@ -9,4 +9,4 @@ It's a template of a company website. Only front end part of the project is done
 - Jquery
 - Wow JS
 
-<link> https://ahmadsabbirchowdhury.github.io/A-Company-Website-Template/ </link>
+Click the link to view the active website: https://ahmadsabbirchowdhury.github.io/A-Company-Website-Template/
