@@ -1,0 +1,378 @@
+/* ===================================
+            Default Values
+        Font Family    : Roboto
+        Greenish Blue  : #34c6d3 (buttons,icons,links,bg)
+        Steel Gray     : #41464b (Headings)
+        white          : #fff    (texts with black bg)
+        Blue Bayoux    : #64707b  (Paragraps)
+
+====================================== */
+html, body{
+	height: 100%;
+}
+
+body{
+    font-family: "Roboto Condensed", "sans-serif";
+}
+
+p{
+	color: #64707b;
+	font-size: 16px;
+	font-weight: 300;
+}
+
+h3{
+	color: #41464b;
+	text-transform: uppercase;
+}
+/* ===================================
+		Home CSS Part
+====================================== */
+#home{
+	height: 100%;
+}
+#home-cover{
+	height: 100%;
+	background-image: url("../img/bg-home.jpg");
+}		
+
+#home-content-box{
+	height: 100%;
+	width: 100%;
+	display: table;
+}
+#home-content-box-inner{
+	display: table-cell;
+	vertical-align: middle; /*it vertically alligns the whole text in middle*/
+	text-align: center;  /*align the texts in the center, vertically middle. Horizontal */
+}
+#home-heading h3{
+	color: #fff;
+	font-size: 55px;
+	font-weight: 700;
+	margin: 20px 0 20px 0;
+	text-transform: uppercase;
+}
+
+/* ===================================
+		Parallax (Generic)
+====================================== */
+.bg-parallax{
+	background-repeat: no-repeat;
+	background-size: cover; /*it will cover the whole section with the picture*/
+	background-position: center;
+	background-attachment: fixed; /*parallax effect, image moves while scrolling*/
+}
+
+/* ===================================
+		Button (generic)
+====================================== */
+.btn-general{
+	border-radius: 0;
+	border-width: 2px;
+	padding: 12px 26px 12px 26px;
+	font-size: 16px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+.btn-white{
+	border-color: #fff;
+	color: #fff;
+}
+.btn-white:hover,
+.btn-white:focus{
+	background-color: #fff;
+	color: #41464b;
+}
+
+/*For About "our work" button */
+.btn-blue{
+	border-color: #34c6d3;
+	color: #34c6d3;
+}
+.btn-blue:hover,
+.btn-blue:focus{
+	background-color: #34c6d3;
+	color: #fff;
+}
+
+/* ===================================
+		Animate CSS
+====================================== */
+#home-cover{
+	animation-delay: .2s;
+	animation-duration: .5s;
+}
+#home-heading{
+	animation-delay: .5s;
+	animation-duration: .5s;
+}
+#home-btn{
+	animation-delay: 1s;
+	animation-duration: .5s;
+}
+
+/* ===================================
+		Content Box (Generic)
+====================================== */
+.content-box{
+	padding: 60px 0px 60px 0;
+}
+.content-title h3{
+	font-size: 30px;
+	font-weight: 700;
+	text-align: center;
+	margin: 0 0 30px 0;
+}
+.content-title-white h3{
+	color: white;
+}
+.content-title-underline{
+	width: 30px;
+	height: 3px;
+	background-color: #34c6d3;
+	margin: 0 auto 30px auto;  /*it will center the line under service*/
+}
+
+
+/* ===================================
+		Services section (Generic)
+====================================== */
+.service-item{
+	padding: 20px 0 20px 0;
+	margin-bottom: 20px;
+	cursor: pointer;
+}
+.service-item-icon i{
+	color: #34c6d3;
+	float: left;
+	padding: 15px; /*means top,right,bottom,left all 15px*/
+	margin-right: 25px;
+	width: 75px;
+	height: 75px;
+	text-align: center;
+}
+.service-item:hover .service-item-icon i {
+	color: #fff;
+	background-color: #34c6d3;
+}
+.service-item-title h3{
+	font-size: 20px;
+	font-weight: 400;
+	margin: 0 0 10px 0;
+}
+.service-item-desc p{
+	margin: 0;
+	padding-left: 85px;
+}
+
+
+/* ===================================
+		About Section (diagonal)
+====================================== */
+#about-bg-diagonal{
+	width: 60%;
+	height: 700px;
+	float: right;
+	background-image: url(../img/bg-about.jpg);
+	border-left: 200px solid #fff;
+	border-top: 700px solid transparent;
+}
+
+#about-content-box{
+	float: left;
+	height: 700px;
+	
+}
+#about-content-box-outer {
+	width: 100%;  /*same as the "about-content-box" */
+	height: 100%;
+	display: table; 
+}
+#about-content-box-inner {
+	display: table-cell;
+	vertical-align: middle;
+}
+#about .content-title h3{
+	text-align: left;
+}
+
+#about .content-title-underline{
+	margin: 0 0 30px 0;
+}
+#about-desc p{
+	margin-bottom: 30px;
+	/*width: 300px; */
+}
+
+
+/* ===================================
+		Work
+====================================== */
+.row.no-gutters [class*=col-] {  /*selects all class with 'col' name */
+	padding-left: 0;
+	padding-right: 0;
+}
+.img-wrapper img:hover{
+	transform: scale(1.5);  /*scale increases or decreases image size, ZOOM IN EFFECT */
+	/* cursor: zoom-in; */
+}
+.img-wrapper{
+	overflow: hidden;
+}
+.img-wrapper img{
+	transition: transform .6s ease;  /*smooths the ZOOM IN EFFECT */
+}
+
+#work .content-box{
+	margin-bottom: -15px;
+}
+
+
+/* ===================================
+		TEAM CSS Part
+====================================== */
+.team-member{
+	margin: 0 15px;
+}
+.team-member-info{
+	padding: 10px 0 30px 0;
+}
+h4.team-member-name{
+	font-size: 22px;
+	font-weight: 699;
+	letter-spacing: 1px;
+	padding-top: 2px;
+}
+h4.team-member-designation{
+	color: #34c6d3;
+	font-size: 15px;
+	font-weight: 699;
+	font-style: italic;
+	letter-spacing: 1px;
+	margin-top: 5px;
+}
+
+/* ===================================
+		Social  Generic
+====================================== */
+.social-list{
+	padding-left: 0;
+}
+.social-list li{
+	list-style: none;
+	display: inline-block;
+	height: 32px; /* Creates space around the icon */
+	width: 32px;	/* Creates space around the icon */
+	margin-top: 10px;
+	margin-right: 6px;
+}
+.social-icon i{
+	font-size: 17px;
+}
+.icon-gray i{
+	color: #64707b;
+}
+.icon-white i{
+	color: #fff;
+}
+.social-icon i:hover{
+	color: #34c6d3;
+}
+
+
+/* ===================================
+		Testmonial
+====================================== */
+#customers-testimonials{
+	margin-top: -15px;
+}
+#testimonial-cover{
+	background-image: url("../img/bg-testimonials.jpg");
+}
+#testimonial .content-box{
+	background-color: rgba(0,0,0,0.2);
+}
+#customers-testimonials{
+	padding: 50px 0px;
+}
+#testimonial img{
+	max-width: 120px;
+	margin: 0 auto 0 auto;  /*Align images in middle*/
+}
+#testimonial blockquote{
+	border:0;
+	font-family: Georgia, sans-serif;
+	font-style: italic;
+	color: #fff;
+	padding: 7px 150px;
+}
+#testimonial blockquote p{
+	color: #fff;
+}
+.testimonial-author p{
+	color: #fff;
+	font-size: 17px;
+}
+.testimonial-author p strong{
+	display: block;
+}
+
+
+/* ===================================
+		CONTACT
+====================================== */
+footer{
+	background-color: #41464b;
+	margin-top: 100px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	border-top: 5px solid rgba(0,0,0,0.2);
+}
+#contact-left h3, #contact-right h3{
+	color: #fff;
+	font-size: 27px;
+	font-weight: 700;
+}
+#contact-left p{
+	color: #fff;
+	margin-bottom: 30px;
+}
+#contact-info {
+	background-image: url("../img/world-map.png");
+	background-repeat: no-repeat;
+	background-size: contain; /*Image contain in full height and width*/
+}
+#contact-info address{
+	color: #fff;
+}
+#contact-info address b, 
+#phone-fax-email b strong{
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+form textarea{
+	resize: none;
+}
+form .form-control{
+	background: transparent;
+	border-radius: 0;
+	border-color: #fff;
+	font-size: 17px;
+	font-weight: 300;
+	padding: 8px 16px;
+	margin-bottom: 20px;
+	color: #fff;
+}
+
+/* ===================================
+		FORM ERROR MESSAGE
+====================================== */
+#contact-right #error_msg{
+	margin-bottom: 20px;
+	padding: 0px;
+	background: #fe8b8e;
+	text-align: center;
+	font-size: 17px;
+	transition: all 0.5s ease;
+}
