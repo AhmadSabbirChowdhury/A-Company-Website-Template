@@ -8,3 +8,5 @@ It's a template of a company website. Only front end part of the project is done
 - Owl Carousel
 - Jquery
 - Wow JS
+
+<link>
